@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz Website</h1>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search for quizzes...">
+            <button id="voice-search-button">🎤</button>
+        </div>
+        <select id="quiz-category-dropdown">
+            <!-- Options will be added dynamically by JavaScript -->
+        </select>
+    </header>
+    <main>
+        <div class="tabs">
+            <button class="tab-button" data-difficulty="easy">Easy</button>
+            <button class="tab-button" data-difficulty="medium">Medium</button>
+            <button class="tab-button" data-difficulty="hard">Hard</button>
+        </div>
+        <div id="quiz-container">
+            <!-- Questions will be loaded here -->
+        </div>
+        <div id="timer">Elapsed Time: <span id="timer-display">0</span> seconds</div>
+    </main>
+    <footer>
+        <div id="calculator">
+            <input type="text" id="calc-display" disabled>
+            <div class="calc-buttons">
+                <button data-value="1">1</button>
+                <button data-value="2">2</button>
+                <button data-value="3">3</button>
+                <button data-value="+">+</button>
+                <button data-value="4">4</button>
+                <button data-value="5">5</button>
+                <button data-value="6">6</button>
+                <button data-value="-">-</button>
+                <button data-value="7">7</button>
+                <button data-value="8">8</button>
+                <button data-value="9">9</button>
+                <button data-value="*">*</button>
+                <button data-value="C">C</button>
+                <button data-value="0">0</button>
+                <button data-value="=">=</button>
+                <button data-value="/">/</button>
+            </div>
+        </div>
+        <div id="progress-bar-container">
+            <div id="progress-bar"></div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
