@@ -11,10 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let totalQuestions = 0;
     let startTime;
 
-    // Sample quiz categories
+    //  quiz categories
     const categories = ['All Categories', 'History', 'Science', 'Math', 'Biology'];
 
-    // Sample quiz data
+    //  quiz data
     const quizzes = {
         history: {
             easy: [
@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Voice search functionality (basic implementation for demonstration)
+    // Voice search functionality
     voiceSearchButton.addEventListener('click', () => {
         const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
         recognition.onresult = (event) => {
